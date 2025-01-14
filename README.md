@@ -9,4 +9,6 @@
 ### Ring oscillator as Voltage Controlled Oscillator 
 ### D Flip flop circuitry as frequency divider 
 
+
+Block diagram of Phase Locked Loop:
 ![PLL FINAL BLOCK DIAGRAM](https://github.com/user-attachments/assets/25f87119-2446-4adb-96b5-9532ed10733c)
