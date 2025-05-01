@@ -33,11 +33,7 @@
 
 
 ## Ring oscillator:
-
-<img width="455" alt="VCO CKT 45NM" src="https://github.com/user-attachments/assets/ddacd99b-b379-4877-9c36-1cdf1f154de7" />
-![vco 45nm output](https://github.com/user-attachments/assets/36528467-19ca-4a29-95ce-2350943b9ff9)
-![vco 180nm circuit](https://github.com/user-attachments/assets/e1728361-ef32-4055-b6c6-2bc8373c6885)
-![vco 180nm output](https://github.com/user-attachments/assets/8be2cec4-9778-4008-aa25-e00abfa9e074)
+<img width="745" alt="VCO CKT 45NM" src="https://github.com/user-attachments/assets/51efad91-d42c-4243-ad80-db765cf5f2b2" />
 
 ## okay
 
