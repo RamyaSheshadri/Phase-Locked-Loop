@@ -24,5 +24,12 @@
 ## Output using 180nm CMOS technology:
 ![180nm pd ](https://github.com/user-attachments/assets/bbdaf8e5-ebaa-4df5-9f34-ae94ed795e4e)
 
+## Output using 2nd order filter in 45nm technology: 
+<img width="259" alt="filter 45nm" src="https://github.com/user-attachments/assets/4861a36e-a230-419a-a130-0d07cde36e83" />
+
+## 180nm:
+![180nm filter op](https://github.com/user-attachments/assets/6846e0f4-090b-46fe-9850-34c5bca8c28c)
+
+
 
 
