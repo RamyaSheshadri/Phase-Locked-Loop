@@ -35,7 +35,8 @@
 ## Voltage contolled oscillator:
 ### 45nm:
 <img width="1000" alt="VCO CKT 45NM" src="https://github.com/user-attachments/assets/51efad91-d42c-4243-ad80-db765cf5f2b2" />
-![vco 45nm output](https://github.com/user-attachments/assets/791303d9-0486-4db5-a980-87dd596e1106)
+![vco 45nm output](https://github.com/user-attachments/assets/1e0966fa-018f-45da-8a21-6fd39c04d9ec)
+
 
 ### 180nm:
 ![vco 180nm circuit](https://github.com/user-attachments/assets/54ed3527-15e8-4db4-b2d2-57dcbb3d7870)
