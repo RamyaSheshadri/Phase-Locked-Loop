@@ -39,3 +39,5 @@
 ![vco 180nm circuit](https://github.com/user-attachments/assets/e1728361-ef32-4055-b6c6-2bc8373c6885)
 ![vco 180nm output](https://github.com/user-attachments/assets/8be2cec4-9778-4008-aa25-e00abfa9e074)
 
+## okay
+
