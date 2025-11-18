@@ -43,26 +43,51 @@ The core PLL block consists of:
 - 45nm node provides faster switching, reducing jitter and noise.
 
 ### 2. Low-Pass Filter
-- Second-order RC filter with cutoff  
-  \[
-  f_c = \frac{1}{2\pi RC}
-  \]
-- Values used:  
-  - \( R = 1.6\,k\Omega \)  
-  - \( C = 10\,pF \)  
-  - Cutoff ≈ 9.94 MHz  
-- Designed for loop stability and reduced overshoot.
+-# PLL-Based Low Power Frequency Synthesizer
 
-### 3. Voltage-Controlled Oscillator
-- 5-stage ring oscillator.
-- Inverter delay ≈ 100ps (45nm), \( R = 100\Omega \), \( C = 1.45pF \).
-- Tuning range:
-  - **45nm:** 10 MHz – 1 GHz  
-  - **180nm:** Moderate range, higher power
+## Methodology
+
+### 1. Low-Pass Filter (2nd Order RC)
+**Cutoff frequency formula:**
+fc = 1 / (2 * π * R * C)
+
+**Values used:**
+- R = 1.6 kΩ
+- C = 10 pF
+
+**Calculated cutoff:**
+
+fc = 1 / (2 * π * 1.6k * 10p)  
+fc ≈ 9.94 MHz
+
+---
+
+### 3. Ring Oscillator (VCO)
+
+**Oscillation frequency formula:**
+
+fosc = 1 / (2 * N * td)
+
+Where:  
+- N = number of inverter stages  
+- td = delay of one inverter
+
+**Given values:**
+- N = 5  
+- td ≈ 100 ps (45 nm)
+
+**Frequency:**
+fosc = 1 / (2 * 5 * 100ps)  
+fosc = 1 / (1000ps)  
+fosc = 1 GHz
+
+---
 
 ### 4. Frequency Divider
 - Implemented using mod-N counter and flip-flops.
 - Ensures accurate frequency scaling and minimal propagation delay.
+- **Output frequency:**
+fout = fin / N
 
 ---
 
@@ -78,7 +103,7 @@ The core PLL block consists of:
 
 ---
 
-## Conclusion 🚦
+## Conclusion:
 
 - **45nm PLL:** Best suited for high-performance applications such as SoCs and communications systems. Offers better efficiency and compactness, but more sensitive to noise and manufacturing variations.
 - **180nm PLL:** Ideal for cost-efficient, reliable, and moderate-performance applications. Easier to design but consumes more power and area.
