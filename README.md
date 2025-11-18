@@ -103,42 +103,10 @@ fout = fin / N
 
 ---
 
-## Conclusion:
-
-- **45nm PLL:** Best suited for high-performance applications such as SoCs and communications systems. Offers better efficiency and compactness, but more sensitive to noise and manufacturing variations.
-- **180nm PLL:** Ideal for cost-efficient, reliable, and moderate-performance applications. Easier to design but consumes more power and area.
-
----
-
-## References
-
-1. B. Razavi, *Design of Analog CMOS Integrated Circuits*, McGraw-Hill, 2001.  
-2. R. E. Best, *Phase-Locked Loops Design, Simulation, and Applications*.  
-3. S. Sun & T. H. Lee, "A second-order PLL design methodology", IEEE Circuits and Systems Magazine.  
-4. Additional references from project report.
-
----
-
-## Credits
-
-- **Nandita Hosamani**  
-- **Prajnya Shenoy**  
-- **Pranathi R**  
-- **Ramya Sheshadri**  
-- **Guide:** *Archana H R, BMS College of Engineering*
-
----
-
-
-
-
-
-
-
-
-
-
 ## Phase detecctor using XOR gate:
+- In a PLL, the XOR gate compares the phase of the reference and output signals, generating a voltage proportional to the phase difference.
+- It thus gives a high output(error voltage) when the output frequency which is feedback to the phase detector is not the same as the reference frequency.
+  
 ![xor pd 180nm ckt](https://github.com/user-attachments/assets/aff643b6-14b8-4936-b1f4-f53c52011e11)
 
 ## Output using 45nm CMOS technology:
@@ -146,6 +114,13 @@ fout = fin / N
 
 ## Output using 180nm CMOS technology:
 ![180nm pd ](https://github.com/user-attachments/assets/bbdaf8e5-ebaa-4df5-9f34-ae94ed795e4e)
+
+Inference: 
+- The XOR-based phase detector showed a linear phase detection range of ±90°, with low 
+power consumption.
+- The output phase difference was converted into a voltage signal, 
+exhibiting slight non-linearity near the range limits, which was effectively filtered by the lowpass filter.
+
 
 ## Output using 2nd order filter in 45nm technology: 
 ![45nm filter op](https://github.com/user-attachments/assets/0ae04a19-4c1a-4efe-8243-f0deafa59ca3)
@@ -171,5 +146,28 @@ fout = fin / N
 
 
 
+## Conclusion:
+
+- **45nm PLL:** Best suited for high-performance applications such as SoCs and communications systems. Offers better efficiency and compactness, but more sensitive to noise and manufacturing variations.
+- **180nm PLL:** Ideal for cost-efficient, reliable, and moderate-performance applications. Easier to design but consumes more power and area.
+
+---
+
+## References
+
+1. B. Razavi, *Design of Analog CMOS Integrated Circuits*, McGraw-Hill, 2001.  
+2. R. E. Best, *Phase-Locked Loops Design, Simulation, and Applications*.  
+3. S. Sun & T. H. Lee, "A second-order PLL design methodology", IEEE Circuits and Systems Magazine.  
+4. Additional references from project report.
+
+---
+
+## Credits
+
+- **Nandita Hosamani**  
+- **Prajnya Shenoy**  
+- **Pranathi R**  
+- **Ramya Sheshadri**  
+- **Guide:** *Archana H R, BMS College of Engineering*
 
 
