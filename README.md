@@ -1,17 +1,7 @@
 # Phase-Locked-Loop
-
-## Design of a low power frequency synthesizer using Phase Locked Loops in 45nm and 180nm technology
-
-## Tool used: Cadence Virtuoso
-## Blocks designed:
-### XOR gate as Phase Detector 
-### Loop filter using 2nd order RC low pass circuit
-### Ring oscillator as Voltage Controlled Oscillator 
-### D Flip flop circuitry as frequency divider 
-# PLL-Based Low Power Frequency Synthesizer
+# Design of a low power frequency synthesizer using Phase Locked Loops in 45nm and 180nm technology
 
 ## Project Overview
-
 This mini project presents the design, implementation, and analysis of a low-power Phase-Locked Loop (PLL) synthesizer suitable for modern high-performance and compact electronic applications. The architecture utilizes an XOR gate phase detector, a second-order low-pass filter, a ring oscillator as the voltage-controlled oscillator (VCO), and a frequency divider using a mod-N counter. The design is evaluated across both 45nm and 180nm CMOS processes, highlighting trade-offs in speed, power, and area efficiency.
 
 ---
@@ -22,7 +12,7 @@ A PLL system was implemented to achieve energy-efficient clock generation and fr
 
 ---
 
-## Block Diagram 🗂️
+## Block Diagram:
 
 The core PLL block consists of:
 
@@ -31,7 +21,8 @@ The core PLL block consists of:
 - **Voltage-Controlled Oscillator (Ring Oscillator)**
 - **Frequency Divider (Mod-N Counter)**
 
-> Add the original schematic/block diagram image here (`/assets/block_diagram.png`).
+#### Block diagram of Phase Locked Loop:
+![PLL FINAL BLOCK DIAGRAM](https://github.com/user-attachments/assets/25f87119-2446-4adb-96b5-9532ed10733c)
 
 ---
 
@@ -75,7 +66,7 @@ The core PLL block consists of:
 
 ---
 
-## Results and Comparative Analysis 📊
+## Results and Comparative Analysis
 
 | Feature          | 45nm CMOS | 180nm CMOS |
 |------------------|-----------|------------|
@@ -103,7 +94,7 @@ The core PLL block consists of:
 
 ---
 
-## Credits 👩‍🎓
+## Credits
 
 - **Nandita Hosamani**  
 - **Prajnya Shenoy**  
@@ -119,8 +110,7 @@ The core PLL block consists of:
 
 
 
-#### Block diagram of Phase Locked Loop:
-![PLL FINAL BLOCK DIAGRAM](https://github.com/user-attachments/assets/25f87119-2446-4adb-96b5-9532ed10733c)
+
 
 
 ## Phase detecctor using XOR gate:
