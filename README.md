@@ -142,10 +142,12 @@ exhibiting slight non-linearity near the range limits, which was effectively fil
 
 ### Output using 45nm tech:
 <img width="1000" alt="VCO CKT 45NM" src="https://github.com/user-attachments/assets/51efad91-d42c-4243-ad80-db765cf5f2b2" />
+
 ![vco 45nm output](https://github.com/user-attachments/assets/355629b5-7b7e-40ae-b2c9-e77701701aca)
 
 ### Output using 180nm tech:
 ![vco 180nm circuit](https://github.com/user-attachments/assets/54ed3527-15e8-4db4-b2d2-57dcbb3d7870)
+
 ![vco 180nm output](https://github.com/user-attachments/assets/c5121143-d077-4d0b-9172-164583412460)
 
 ### Inference:
@@ -180,9 +182,9 @@ The ring oscillator-based VCO offered a tuning range from 10MHz to 1GHz with con
 - However,it uses more power, takes up more physical space on the chip, and can’t match the performance levels of the 45 nm design.
 
 ## Recommendation:
-• If you’re building cutting-edge systems where speed, power efficiency, and size are 
+- If you’re building cutting-edge systems where speed, power efficiency, and size are 
 critical (like advanced SoCs or communication devices), go with the 45 nm PLL.
-• If your focus is on simpler systems that don’t need the highest performance and where 
+- If your focus is on simpler systems that don’t need the highest performance and where 
 cost and ease of design are priorities, the 180 nm PLL is a better option
 
 ---
