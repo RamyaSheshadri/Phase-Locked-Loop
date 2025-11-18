@@ -155,16 +155,22 @@ The ring oscillator-based VCO offered a tuning range from 10MHz to 1GHz with con
 - Divides the frequency of the input signal by N. 
 - The counter output toggles (changes state) once every N clock pulses.
 - This toggling corresponds to a frequency that is 1/N of the input frequency.
+
+<img width="757" height="387" alt="Screenshot 2025-11-18 130500" src="https://github.com/user-attachments/assets/39bd37f6-99b4-4cb8-8d86-20dfa3cd49c0" />
+
+<img width="684" height="368" alt="Screenshot 2025-11-18 130523" src="https://github.com/user-attachments/assets/1e31e6bf-6e3f-4a2f-8509-014c0588d880" />
+
+<img width="747" height="543" alt="Screenshot 2025-11-18 130539" src="https://github.com/user-attachments/assets/536d487b-4923-475d-b72b-89948bbd4a1b" />
   
 <img width="751" height="327" alt="Screenshot 2025-11-18 130602" src="https://github.com/user-attachments/assets/8be50009-057d-46eb-afda-8e51751f849d" />
 
 
-<img width="747" height="543" alt="Screenshot 2025-11-18 130539" src="https://github.com/user-attachments/assets/536d487b-4923-475d-b72b-89948bbd4a1b" />
 
 
-<img width="684" height="368" alt="Screenshot 2025-11-18 130523" src="https://github.com/user-attachments/assets/1e31e6bf-6e3f-4a2f-8509-014c0588d880" />
 
-<img width="757" height="387" alt="Screenshot 2025-11-18 130500" src="https://github.com/user-attachments/assets/39bd37f6-99b4-4cb8-8d86-20dfa3cd49c0" />
+
+
+
 
 ## Conclusion:
 
