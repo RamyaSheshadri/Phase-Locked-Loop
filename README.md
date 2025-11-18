@@ -103,7 +103,7 @@ fout = fin / N
 
 ---
 
-## Phase detecctor using XOR gate:
+## 1.Phase detecctor using XOR gate:
 - In a PLL, the XOR gate compares the phase of the reference and output signals, generating a voltage proportional to the phase difference.
 - It thus gives a high output(error voltage) when the output frequency which is feedback to the phase detector is not the same as the reference frequency.
   
@@ -115,34 +115,55 @@ fout = fin / N
 ## Output using 180nm CMOS technology:
 ![180nm pd ](https://github.com/user-attachments/assets/bbdaf8e5-ebaa-4df5-9f34-ae94ed795e4e)
 
-Inference: 
+### Inference: 
 - The XOR-based phase detector showed a linear phase detection range of ±90°, with low 
 power consumption.
 - The output phase difference was converted into a voltage signal, 
 exhibiting slight non-linearity near the range limits, which was effectively filtered by the lowpass filter.
 
-
+## 2. 2nd order Low Pass Filter:
+ - It ensures the PLL operates in a stable manner, without excessive overshoot, oscillations, or jitter.
+ - The filter determines the PLL's loop bandwidth, which affects locking time, noise suppression, and the ability to track changes in the input signal.
+   
 ## Output using 2nd order filter in 45nm technology: 
 ![45nm filter op](https://github.com/user-attachments/assets/0ae04a19-4c1a-4efe-8243-f0deafa59ca3)
-
 
 ## 180nm:
 ![180nm filter op](https://github.com/user-attachments/assets/6846e0f4-090b-46fe-9850-34c5bca8c28c)
 
+### Inference:
+- The second-order RC low-pass filter successfully suppressed high-frequency noise at the output of the phase detector.
+- The chosen cutoff frequency provided a good balance between noise attenuation and settling time, ensuring that the PLL locked quickly and stably.
 
-## Voltage contolled oscillator:
-### 45nm:
+## 3.Voltage contolled oscillator:
+- It consists of an odd number of inverters connected in a loop.
+- The inverters create a feedback loop, generating an oscillating signal at a frequency determined by the delay of the inverters and the loop length.
+- The oscillation frequency can be adjusted by changing the voltage applied to the inverters, making it suitable for use as a VCO.
+
+### Output using 45nm tech:
 <img width="1000" alt="VCO CKT 45NM" src="https://github.com/user-attachments/assets/51efad91-d42c-4243-ad80-db765cf5f2b2" />
 ![vco 45nm output](https://github.com/user-attachments/assets/355629b5-7b7e-40ae-b2c9-e77701701aca)
 
-
-
-### 180nm:
+### Output using 180nm tech:
 ![vco 180nm circuit](https://github.com/user-attachments/assets/54ed3527-15e8-4db4-b2d2-57dcbb3d7870)
 ![vco 180nm output](https://github.com/user-attachments/assets/c5121143-d077-4d0b-9172-164583412460)
 
+### Inference:
+The ring oscillator-based VCO offered a tuning range from 10MHz to 1GHz with controlled biasing. 
 
-## Frequency divider:
+## 4.Mod-n counter as frequency divider:
+- Divides the frequency of the input signal by N. 
+- The counter output toggles (changes state) once every N clock pulses.
+- This toggling corresponds to a frequency that is 1/N of the input frequency.
+  <img width="379" height="194" alt="image" src="https://github.com/user-attachments/assets/3a3cf856-62f8-4902-bea7-ba11a8340da4" />
+
+  <img width="342" height="184" alt="image" src="https://github.com/user-attachments/assets/c121f203-e950-46c3-8451-675dc4f477b0" />
+
+  <img width="374" height="272" alt="image" src="https://github.com/user-attachments/assets/952c6a71-e524-4cda-8d77-ad9b4ed188a0" />
+
+  <img width="376" height="164" alt="image" src="https://github.com/user-attachments/assets/fd75e4dc-0c63-4a46-a716-be44b150900a" />
+
+
 
 
 
