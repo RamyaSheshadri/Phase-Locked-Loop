@@ -156,26 +156,34 @@ The ring oscillator-based VCO offered a tuning range from 10MHz to 1GHz with con
 - The counter output toggles (changes state) once every N clock pulses.
 - This toggling corresponds to a frequency that is 1/N of the input frequency.
 
+### Schematic for MOD-N Counter:
 <img width="757" height="387" alt="Screenshot 2025-11-18 130500" src="https://github.com/user-attachments/assets/39bd37f6-99b4-4cb8-8d86-20dfa3cd49c0" />
 
+### Schematic for MOD-N Counter:
 <img width="684" height="368" alt="Screenshot 2025-11-18 130523" src="https://github.com/user-attachments/assets/1e31e6bf-6e3f-4a2f-8509-014c0588d880" />
 
+### Schematic for NAND gate :
 <img width="747" height="543" alt="Screenshot 2025-11-18 130539" src="https://github.com/user-attachments/assets/536d487b-4923-475d-b72b-89948bbd4a1b" />
-  
+
+### Schematic for D-Flip Flop
 <img width="751" height="327" alt="Screenshot 2025-11-18 130602" src="https://github.com/user-attachments/assets/8be50009-057d-46eb-afda-8e51751f849d" />
 
-
-
-
-
-
-
-
-
 ## Conclusion:
+- The 45 nm PLL is designed using **advanced technology** , making it a great choice for systems that need **high performance, low power, and compact size**.
+- It's perfect for modern, high-speed devices like smartphones, advanced processors, and System-on-Chip (SoC) applications.
+- This smaller technology allows the PLL to operate faster and consume less energy.
+- However, because it uses cutting-edge design processes, it requires specialized tools and careful tuning to account for its sensitivity to manufacturing variations.
 
-- **45nm PLL:** Best suited for high-performance applications such as SoCs and communications systems. Offers better efficiency and compactness, but more sensitive to noise and manufacturing variations.
-- **180nm PLL:** Ideal for cost-efficient, reliable, and moderate-performance applications. Easier to design but consumes more power and area.
+- On the other hand, the 180 nm PLL is based on older, more established technology.
+- It’s **easier to design and build**, and it tends to be **more reliable** in handling manufacturing inconsistencies.
+- This makes it a good fit for applications that don’t require extreme speeds or low power, like simpler electronics or cost-sensitive devices.
+- However,it uses more power, takes up more physical space on the chip, and can’t match the performance levels of the 45 nm design.
+
+## Recommendation:
+• If you’re building cutting-edge systems where speed, power efficiency, and size are 
+critical (like advanced SoCs or communication devices), go with the 45 nm PLL.
+• If your focus is on simpler systems that don’t need the highest performance and where 
+cost and ease of design are priorities, the 180 nm PLL is a better option
 
 ---
 
